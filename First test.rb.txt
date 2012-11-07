@@ -1,0 +1,40 @@
+
+puts "Let`s start\n\n"
+
+a = ["1"]
+d = 1
+res = ""
+max = 12 # от этого параметра зависит кол-во вычисляемых эл-тов
+
+for j in 0..max 
+
+	for i in 0..a[j].size-1
+
+	b = a[j][i]
+
+		if a[j][i] == a[j][i+1]
+
+	 	 d = d + 1
+
+		else
+
+		  res = res + d.to_s + b.to_s
+
+		  b = a[j][i+1]
+		  d = 1
+
+		end
+
+	end
+
+a[j+1] = res
+
+puts a[j+1]
+
+res = ""
+
+end
+
+puts "\nThis is the end"
+
+STDIN.getc
