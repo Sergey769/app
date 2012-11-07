@@ -1,0 +1,6 @@
+ <script>  
+    function f() {
+
+      alert("What arre you doing ... Well you don`t know what you doing");
+    }
+  </script>

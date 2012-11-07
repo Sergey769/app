@@ -1,0 +1,17 @@
+ <!--
+    function f() {
+
+      alert("What are you doing ?");
+
+window.onload = function() {
+    var linkWithAlert = document.getElementById("alertLink");
+    linkWithAlert.onclick = function() {
+        return confirm('Вы уверены?');
+    };
+};
+
+
+    }
+
+
+  //-->
